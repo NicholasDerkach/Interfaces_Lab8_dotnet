@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    <div class="jumbotron">
+        <h2 class="text-center">My site</h2>
+        <h3 class="text-center">Використані технології:</h3>
+        <div row class="text-center">
+            <div class="col-md-3">
+                <img alt="tech-1" src="~/Images/bootstrap-logo.png" style="width:150px;height:150px;" />
+                <p>Bootstrap</p>
+            </div>
+            <div class="col-md-3">
+                <img alt="tech-2" src="~/Images/html.png" style="width:150px;height:150px;" />
+                <p>Html 5</p>
+            </div>
+            <div class="col-md-3">
+                <img alt="tech-3" src="~/Images/css.jpg" style="width:150px;height:150px;" />
+                <p>CSS 3</p>
+            </div>
+            <div class="col-md-3">
+                <img alt="tech-4" src="~/Images/jquery.jpg" style="width:150px;height:150px;" />
+                <p>jQuery</p>
+            </div>
+        </div>
+        <hr />
+        <div id="text">
+            <h2 class="text-center">Завдання:</h2>
+            <h3>
+                Розробити статичний web-сайт у форматі html-документів.
+                Для організації інтерфейсу використати додаткові бібліотеки web-розробки, такі як JQuery та Bootstrap.
+            </h3>
+
+            <h4>
+                Сайт повинен містити щонайменше 3 сторінки з можливістю навігації між ними за допомогою меню.
+                По виконанню роботи сформувати звіт. У звіті повинні бути присутні скріншоти сторінок, пояснення функціоналу кожної сторінки.
+                У якості додатка, у звіті повинен бути присутній код сторінок (вміст html-файлів), сам текст тіла сторінки
+                (який бачить користувач) можна пропустити. Необхідно надати пояснення використаним функціям додаткових бібліотек.
+            </h4>
+        </div>
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" id="hide">Заховати завдання</button>
+            <button type="button" class="btn btn-primary" id="show">Показати завдання</button>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+
+            $(document).ready(function () {
+                $("#hide").click(function () {
+                    $("#text").hide();
+                });
+                $("#show").click(function () {
+                    $("#text").show();
+                });
+            });
+        </script>
+    </div>
